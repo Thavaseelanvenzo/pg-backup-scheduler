@@ -1,0 +1,27 @@
+# Backup artifacts -- never commit a database dump
+*.dump
+*.dump.*
+*.sql
+*.tar.gz
+
+# Real secrets and the env reference -- neither belongs in version control.
+.env
+.env.*
+
+# Staging volume contents (dumps + logs)
+/staging/
+staging/
+/app/staging/
+*.log
+
+# Node
+node_modules/
+npm-debug.log*
+.npm/
+*.tsbuildinfo
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

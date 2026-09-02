@@ -1,0 +1,18 @@
+{
+  "name": "pg-backup-scheduler",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Automated full PostgreSQL backups to DigitalOcean Spaces, scheduled by Coolify",
+  "type": "module",
+  "engines": {
+    "node": ">=20.10"
+  },
+  "scripts": {
+    "backup": "node pg_backup.js",
+    "restore-test": "node restore_test.js"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "3.1124.0",
+    "@aws-sdk/lib-storage": "3.1124.0"
+  }
+}
