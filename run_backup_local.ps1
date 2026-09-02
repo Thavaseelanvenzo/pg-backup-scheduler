@@ -7,7 +7,7 @@
 # loads .env, applies the two local-only overrides, and then runs the
 # unmodified backup command.
 #
-# Registered as the twice-daily 08:00 / 20:00 task "pg-backup-scheduler".
+# Registered as the twice-daily 05:15 / 17:15 task "pg-backup-scheduler".
 # Run it by hand any time to reproduce exactly what the schedule does:
 #     powershell -NoProfile -ExecutionPolicy Bypass -File run_backup_local.ps1
 # ---------------------------------------------------------------------------
