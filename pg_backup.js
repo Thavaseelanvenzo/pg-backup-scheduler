@@ -259,6 +259,7 @@ function loadConfig(log, { dumpOnly = false } = {}) {
     );
   }
 
+  console.log("testing auto deployment flag");
   
   const port = Number(config.DB_PORT);
   if (!Number.isInteger(port) || port < 1 || port > 65535) {
